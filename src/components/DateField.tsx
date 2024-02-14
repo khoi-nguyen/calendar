@@ -17,7 +17,7 @@ export default function CustomDateTimeField(props: CustomDateTimeFieldProps) {
         value={props.value ? dayjs(props.value) : dayjs()}
         onChange={function (date) {
           if (props.onChange && date) {
-            props.onChange(date.toString());
+            props.onChange(date.toISOString());
           }
         }}
       />
