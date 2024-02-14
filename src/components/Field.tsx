@@ -1,6 +1,9 @@
 import type { ChangeEvent } from "react";
+
 interface FieldProps {
+  /** Label of the field */
   label: string;
+
   value: string;
   onChange?: (newValue: string) => void;
 }
